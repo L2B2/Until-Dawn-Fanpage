@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerie – Until Dawn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px 60px;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff003c;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      font-size: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff003c;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      margin-top: 300px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #0c0c0c;
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+    }
+
+    footer a {
+      color: #777;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff003c;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="Index.html"><img class="logo" src="logo.png" width="200px"></a>
+  <ul>
+    <li><a href="Index.html">Start</a></li>
+    <li><a href="geschichte.html">Geschichte</a></li>
+    <li><a href="character.html">Charaktere</a></li>
+    <li><a href="entscheidungen.html">Entscheidungen</a></li>
+    <li><a href="#">Galerie</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Galerie</h1>
+  <p>Ein visueller Einblick in die düstere und atmosphärische Welt von *Until Dawn*.</p>
+</header>
+
+<section class="gallery">
+  <img src="until-dawn-wendigo-choke-cropped.avif" alt="Until Dawn Szene 1">
+  <img src="until_dawn__jack_fiddler__the_stranger__by_hsomega25_did9t0x-fullview.jpg" alt="Until Dawn Szene 2">
+  <img src="until-dawn-analisis-opinion-ps5-pc-4245662.webp" alt="Until Dawn Szene 3">
+  <img src="until-dawn-remake-emily-hanging.avif" alt="Until Dawn Szene 4">
+  <img src="until-dawn-remake.webp" alt="Until Dawn Szene 5">
+  <img src="show.png" alt="Until Dawn Szene 6">
+</section>
+
+<footer>
+  <p class="links">
+    <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+  </p>
+  <p>&copy; 2025 Until Dawn Fanprojekt</p>
+</footer>
+
+</body>
+</html>
