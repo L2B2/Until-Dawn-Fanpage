@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Charaktere – Until Dawn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0e0e0e;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 60px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff003c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff003c;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            margin-top: 300px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        .char-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .char-card {
+            background-color: #181818;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+            padding-left: 10px;
+        }
+
+        .char-card:hover {
+            transform: scale(1.03);
+        }
+
+        .char-card img {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            justify-self: center;
+            object-fit: cover;
+        }
+
+        .char-info {
+            padding: 20px;
+        }
+
+        .char-info h2 {
+            margin-bottom: 10px;
+            color: #ff003c;
+        }
+
+        .char-info p {
+            font-size: 1.5rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        .char-info ul {
+            margin-top: 10px;
+            color: #bbb;
+            font-size: 1.3rem;
+        }
+
+        .char-info ul li {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            background-color: #0c0c0c;
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+        }
+
+        footer a {
+            color: #777;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ff003c;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="Index.html"><img class="logo" src="logo.png" width="200px"></a>
+    <ul>
+        <li><a href="Index.html">Start</a></li>
+        <li><a href="geschichte.html">Geschichte</a></li>
+        <li><a href="#">Charaktere</a></li>
+        <li><a href="entscheidungen.html">Entscheidungen</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Charaktere</h1>
+    <p>Lerne die acht Überlebenden kennen – ihre Stärken, Schwächen und Entscheidungen formen dein Spiel.</p>
+</header>
+
+<section class="char-container">
+    <!-- Sam -->
+    <div class="char-card">
+        <img src="sam-img.webp" alt="Sam">
+        <div class="char-info">
+            <h2>Sam Giddings</h2>
+            <p>Nachdenklich, naturverbunden, moralisch stark. Sam ist klug und mutig – sie agiert überlegt und ist oft die Stimme der Vernunft in der Gruppe.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,65 m</li>
+                <li><strong>Hobby:</strong> Yoga, Wandern</li>
+                <li><strong>Merkmale:</strong> Tierlieb, mutig</li>
+                <li><strong>Eigenschaften:</strong> Klug, gerecht, moralisch</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mike -->
+    <div class="char-card">
+        <img src="Mike-img.avif" alt="Mike">
+        <div class="char-info">
+            <h2>Mike Munroe</h2>
+            <p>Charismatisch, mutig, impulsiv. Vom Macho zum Helden – Mike wächst im Verlauf der Nacht über sich hinaus.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,80 m</li>
+                <li><strong>Hobby:</strong> Sport, Jagen</li>
+                <li><strong>Merkmale:</strong> Sportlich, beliebt</li>
+                <li><strong>Eigenschaften:</strong> Mutig, impulsiv, charismatisch</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Chris -->
+    <div class="char-card">
+        <img src="chris-img.jpg" alt="Chris">
+        <div class="char-info">
+            <h2>Chris Hartley</h2>
+            <p>Witzig, loyal, nerdig. Chris kombiniert technischen Verstand mit Herz – besonders wenn es um Ashley geht.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,78 m</li>
+                <li><strong>Hobby:</strong> Technik, Videospiele</li>
+                <li><strong>Merkmale:</strong> Nerd, Brille</li>
+                <li><strong>Eigenschaften:</strong> Loyal, intelligent, humorvoll</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Emily -->
+    <div class="char-card">
+        <img src="emily-img.png" alt="Emily">
+        <div class="char-info">
+            <h2>Emily Davis</h2>
+            <p>Schlagfertig, intelligent, temperamentvoll. Emily ist nicht immer beliebt, beweist aber Überlebenswillen und Mut.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,60 m</li>
+                <li><strong>Hobby:</strong> Shopping, Debattieren</li>
+                <li><strong>Merkmale:</strong> Ehrgeizig, stur</li>
+                <li><strong>Eigenschaften:</strong> Intelligent, energisch, stolz</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Jess -->
+    <div class="char-card">
+        <img src="jess-img.webp" alt="Jessica">
+        <div class="char-info">
+            <h2>Jessica Riley</h2>
+            <p>Charmant, laut, verletzlich. Jess liebt Dramen, zeigt aber im Ernstfall Tiefe und echten Überlebenswillen.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,63 m</li>
+                <li><strong>Hobby:</strong> Mode, Social Media</li>
+                <li><strong>Merkmale:</strong> Flirtend, impulsiv</li>
+                <li><strong>Eigenschaften:</strong> Emotional, selbstbewusst, direkt</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Matt -->
+    <div class="char-card">
+        <img src="matt-img.avif" alt="Matt">
+        <div class="char-info">
+            <h2>Matt Taylor</h2>
+            <p>Hilfsbereit, ruhig, sportlich. Matt möchte Frieden bewahren, wird aber oft in Emilys Konflikte verwickelt.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,85 m</li>
+                <li><strong>Hobby:</strong> Football, Wandern</li>
+                <li><strong>Merkmale:</strong> Loyal, athletisch</li>
+                <li><strong>Eigenschaften:</strong> Ruhig, freundlich, vorsichtig</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Josh -->
+    <div class="char-card">
+        <img src="josh-img.jpg" alt="Josh">
+        <div class="char-info">
+            <h2>Josh Washington</h2>
+            <p>Emotional, kreativ, gebrochen. Nach dem Verlust seiner Schwestern kämpft Josh mit psychischen Problemen.</p>
+            <ul>
+                <li><strong>Alter:</strong> 20</li>
+                <li><strong>Größe:</strong> 1,79 m</li>
+                <li><strong>Hobby:</strong> Filmemachen, Schauspiel</li>
+                <li><strong>Merkmale:</strong> Psychisch labil, sensibel</li>
+                <li><strong>Eigenschaften:</strong> Kreativ, emotional, verwundet</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ashley -->
+    <div class="char-card">
+        <img src="ashley-img.jpg" alt="Ashley">
+        <div class="char-info">
+            <h2>Ashley Brown</h2>
+            <p>Intelligent, sensibel, schüchtern. Ashley hinterfragt alles – ihre Entscheidungen können Leben retten oder gefährden.</p>
+            <ul>
+                <li><strong>Alter:</strong> 18</li>
+                <li><strong>Größe:</strong> 1,64 m</li>
+                <li><strong>Hobby:</strong> Bücher, Philosophie</li>
+                <li><strong>Merkmale:</strong> Introvertiert, tiefgründig</li>
+                <li><strong>Eigenschaften:</strong> Nachdenklich, empathisch, vorsichtig</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="links">
+        <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+    </p>
+    <p>&copy; 2025 Until Dawn Fanprojekt</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Until Dawn – Das Horror-Erlebnis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e0e0e;
+            color: #fff;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px 60px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff003c;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 2rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff003c;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            z-index: 2;
+            animation: fadeInUp 2s ease-out forwards;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px #000;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ccc;
+        }
+
+        .header-bg{
+            position: absolute;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .scroll-down {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            color: #fff;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+            z-index: 3;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        section.intro {
+            padding: 100px 20px 60px;
+            background-color: #181818;
+            text-align: center;
+        }
+
+        section.intro h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        section.intro p {
+            font-size: 2rem;
+            max-width: 1300px;
+            margin: 20px auto;
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 60px 40px;
+            background-color: #101010;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 850px;
+            object-fit: cover;
+        }
+
+        .gallery img {
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #0c0c0c;
+            padding: 40px 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        footer .links a {
+            color: #777;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        footer .links a:hover {
+            color: #ff003c;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="Index.html"><img class="logo" src="logo.png" width="200px"></a>
+    <ul>
+        <li><a href="geschichte.html">Geschichte</a></li>
+        <li><a href="character.html">Charaktere</a></li>
+        <li><a href="entscheidungen.html">Entscheidungen</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img class="header-bg" src="Until-Dawn-16.webp" width="100%">
+    <div class="hero-content">
+        <h1>Until Dawn</h1>
+        <p>Ein interaktives Horror-Erlebnis, in dem jede Entscheidung zählt.</p>
+    </div>
+    <a href="#intro" class="scroll-down">&#x25BC;</a>
+</header>
+
+<section class="intro">
+    <section class="intro" id="intro">
+    <h2>Willkommen bei Until Dawn</h2>
+    <p>
+        Until Dawn ist ein packendes, filmreif inszeniertes Horrorspiel, das dich in eine
+        düstere Welt entführt, in der jede noch so kleine Entscheidung über Leben und Tod entscheiden kann.
+        Du übernimmst die Kontrolle über acht Freunde, die sich auf einem abgelegenen Berg treffen – nichts ahnend,
+        dass sie von dunklen Geheimnissen und tödlichen Bedrohungen umgeben sind.
+    </p>
+    <p>
+        Das Spiel beeindruckt mit intensiver Atmosphäre, brillanter Schauspiel-Performance (u. a. Rami Malek) und einem
+        einzigartigen Entscheidungsbaum, der zu dutzenden verschiedenen Enden führen kann. Ob du versuchst, alle zu retten –
+        oder zusiehst, wie einer nach dem anderen fällt – liegt ganz bei dir.
+    </p>
+    <p>
+        Diese Fanpage bietet dir bald alles: tiefere Einblicke in die Geschichte, Analysen der Charaktere,
+        Entscheidungswege, Produktionsdetails und eine Galerie mit Screenshots und Artworks.
+        Tauche ein in die Welt von Until Dawn.
+    </p>
+</section>
+
+<div class="gallery">
+    <img src="until-dawn-ps5-pc-images-4_0901030637.jpg" alt="Screenshot 1">
+    <img src="until-dawn-washington-lodge.avif" alt="Screenshot 2">
+    <img src="BlackwoodMountain.webp" alt="Screenshot 3">
+</div>
+
+<footer>
+    <div class="links">
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a>
+    </div>
+    <p>&copy; 2025 Until Dawn Fanprojekt</p>
+</footer>
+
+</body>
+</html>
